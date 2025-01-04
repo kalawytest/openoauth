@@ -2,7 +2,7 @@
   "issuer": "https://eo1q7qkihg24nr3.m.pipedream.net",
   "authorization_endpoint": "https://eo1q7qkihg24nr3.m.pipedream.net/oauth2/authorize",
   "token_endpoint": "https://eo1q7qkihg24nr3.m.pipedream.net/oauth2/token",
-  "userinfo_endpoint": "https://raw.githubusercontent.com/kalawytest/openoauth/refs/heads/main/oauth2/userinfo",
+  "userinfo_endpoint": "https://raw.githubusercontent.com/kalawytest/openoauth/refs/heads/main/oauth2/userinfo.json",
   "jwks_uri": "https://eo1q7qkihg24nr3.m.pipedream.net/oauth2/certs",
   "registration_endpoint": "https://eo1q7qkihg24nr3.m.pipedream.net/oauth2/register",
   "scopes_supported": [
