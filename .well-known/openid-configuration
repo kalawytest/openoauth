@@ -1,70 +1,73 @@
-{
-  "issuer": "https://eo1q7qkihg24nr3.m.pipedream.net",
-  "authorization_endpoint": "https://eo1q7qkihg24nr3.m.pipedream.net/oauth2/authorize",
-  "token_endpoint": "https://eo1q7qkihg24nr3.m.pipedream.net/oauth2/token",
-  "userinfo_endpoint": "https://raw.githubusercontent.com/kalawytest/openoauth/main/oauth2/userinfo.json",
-  "jwks_uri": "https://eo1q7qkihg24nr3.m.pipedream.net/oauth2/certs",
-  "registration_endpoint": "https://eo1q7qkihg24nr3.m.pipedream.net/oauth2/register",
-  "scopes_supported": [
-    "openid",
-    "profile",
-    "email",
-    "address",
-    "phone",
-    "offline_access"
-  ],
-  "response_types_supported": [
-    "code",
-    "token",
-    "id_token",
-    "code id_token",
-    "code token",
-    "id_token token",
-    "code id_token token"
-  ],
-  "grant_types_supported": [
-    "authorization_code",
-    "implicit",
-    "refresh_token",
-    "client_credentials",
-    "password"
-  ],
-  "subject_types_supported": [
-    "public",
-    "pairwise"
-  ],
-  "id_token_signing_alg_values_supported": [
-    "RS256",
-    "RS384",
-    "RS512",
-    "ES256",
-    "ES384",
-    "ES512"
-  ],
-  "claims_supported": [
-    "sub",
-    "name",
-    "given_name",
-    "family_name",
-    "preferred_username",
-    "email",
-    "email_verified",
-    "profile",
-    "picture",
-    "website",
-    "gender",
-    "birthdate",
-    "zoneinfo",
-    "locale",
-    "phone_number",
-    "phone_number_verified",
-    "address",
-    "updated_at"
-  ],
-  "code_challenge_methods_supported": [
-    "plain",
-    "S256"
-  ],
-  "revocation_endpoint": "https://eo1q7qkihg24nr3.m.pipedream.net/oauth2/revoke",
-  "introspection_endpoint": "https://eo1q7qkihg24nr3.m.pipedream.net/oauth2/introspect"
-}
+  async run({ steps, $ }) {
+    return {
+      issuer: "https://eo1q7qkihg24nr3.m.pipedream.net",
+      authorization_endpoint: "https://eo1q7qkihg24nr3.m.pipedream.net/oauth2/authorize",
+      token_endpoint: "https://eo1q7qkihg24nr3.m.pipedream.net/oauth2/token",
+      userinfo_endpoint: "https://raw.githubusercontent.com/kalawytest/openoauth/main/oauth2/userinfo.json",
+      jwks_uri: "https://eo1q7qkihg24nr3.m.pipedream.net/oauth2/certs",
+      registration_endpoint: "https://eo1q7qkihg24nr3.m.pipedream.net/oauth2/register",
+      scopes_supported: [
+        "openid",
+        "profile",
+        "email",
+        "address",
+        "phone",
+        "offline_access"
+      ],
+      response_types_supported: [
+        "code",
+        "token",
+        "id_token",
+        "code id_token",
+        "code token",
+        "id_token token",
+        "code id_token token"
+      ],
+      grant_types_supported: [
+        "authorization_code",
+        "implicit",
+        "refresh_token",
+        "client_credentials",
+        "password"
+      ],
+      subject_types_supported: [
+        "public",
+        "pairwise"
+      ],
+      id_token_signing_alg_values_supported: [
+        "RS256",
+        "RS384",
+        "RS512",
+        "ES256",
+        "ES384",
+        "ES512"
+      ],
+      claims_supported: [
+        "sub",
+        "name",
+        "given_name",
+        "family_name",
+        "preferred_username",
+        "email",
+        "email_verified",
+        "profile",
+        "picture",
+        "website",
+        "gender",
+        "birthdate",
+        "zoneinfo",
+        "locale",
+        "phone_number",
+        "phone_number_verified",
+        "address",
+        "updated_at"
+      ],
+      code_challenge_methods_supported: [
+        "plain",
+        "S256"
+      ],
+      revocation_endpoint: "https://eo1q7qkihg24nr3.m.pipedream.net/oauth2/revoke",
+      introspection_endpoint: "https://eo1q7qkihg24nr3.m.pipedream.net/oauth2/introspect"
+    };
+  }
+});
